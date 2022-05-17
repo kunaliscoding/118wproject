@@ -11,31 +11,31 @@
 </head>
 <body class="text-center">
     
-    <main class="form-signin">
-      <form class="form">
-        <h1 class="h3 mb-3 fw-normal" style="margin-top: 20px;">Login In</h1>
-    
-        <div class="form-floating">
-          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" style="margin-top: 100px;width: 250px;margin-left: 25%;">
-          <label for="floatingInput" style="margin-left: 25%;">Email Address</label>
-        </div>
-        <div class="form-floating">
-          <input type="password" class="form-control" id="floatingPassword" placeholder="Password" style="width: 250px;margin-left: 25%;">
-          <label for="floatingPassword" style="margin-left: 25%;">Password</label>
-        </div>
-    
-        <div class="checkbox mb-3">
-          <label>
-            <input type="checkbox" value="remember-me"> Remember Me
-          </label>
-        </div>
-        <button class="w-100 btn btn-lg btn-primary" type="submit">Sign In</button>
-      </form>
-    </main>
+  <form class="form" id="login">
+    <h1 class="form__title">Login</h1>
+    <div class="form__message form__message--error"></div>
+    <div class="form__input-group">
+        <input type="text" class="form__input" autofocus placeholder="Username or email">
+        <div class="form__input-error-message"></div>
+    </div>
+    <div class="form__input-group">
+        <input type="password" class="form__input" autofocus placeholder="Password">
+        <div class="form__input-error-message"></div>
+    </div>
+    <button class="form__button" type="submit">Continue</button>
+    <p class="form__text">
+        <a href="#" class="form__link">Forgot your password?</a>
+    </p>
+    <p class="form__text">
+        <a class="form__link" href="./" id="linkCreateAccount">Don't have an account? Create account</a>
+    </p>
+</form>
+<script src="signin.js"></script>
+   
     
     
         
-      
+
     
     </body>
 </html>
